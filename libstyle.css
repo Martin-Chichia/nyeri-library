@@ -62,7 +62,7 @@
     background-color: black;
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipNF3_bLPeNDK1bT_gJU79mKF5nAYka8tLkkzKAw=s680-w680-h510);
     background-size: auto; /* Ensures the image covers the entire div */
-    background-position: center; /* Centers the image */
+    background-position: auto; /* Centers the image */
     background-repeat: no-repeat;
 
 }
