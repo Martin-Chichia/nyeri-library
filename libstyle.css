@@ -4,13 +4,17 @@
     background-color: #90EE90;
     padding: 0px;
     text-align: center;
-    color: white;
+    color: rgb(0, 4, 255);
     font-size: 30px;
     font-family: arial;
     font-weight: 700;
     background-size: auto;
     margin-left: 0px;
     margin-right: 0px;
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipNF3_bLPeNDK1bT_gJU79mKF5nAYka8tLkkzKAw=s680-w680-h510);
+    background-size: auto; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
     
    
 
@@ -23,43 +27,67 @@
 
 }
 .grid-container {
-    display: grid;
+    display: flex;
     grid-template-columns: 100%;
     grid-auto-rows: min-content;
-    border: 1px;
-    padding: 10px;
-    column-gap: 20px;
-    background-color:#e8e85f;
-    gap: 10px;
+    border: 0px;
+    padding: 0px;
+    column-gap: 10px;
+    background-color:rgb(230, 219, 8);
+    gap: 5px;
+    color: blue;
+    height: 100%;
+    vertical-align: middle;
+   
 
 }
 .tab-container{
-    background-color: #FFFF00;
+    background-color: white;
     text-align: left;
-    gap: 50px;
-    width: 15%;
+    gap: 10px;
+    width: 35%;
     margin-left: auto;
+    height: auto;
+    color: blue;
 
    
    
 }
 .button {
     width: 100%;
-    color: rgb(97, 7, 7);
-    font-weight: 700;
+    color:blue;
+    font-weight: 500;
     }
     button {
-        border:none ;
+        border:none;
         background:none;
         cursor: pointer;
-        transition: background-color 1s ease;
+        transition:  color 0.5s,background-color 0.5s,transform 0.5s, border-color 0.5s, box-shadow 0.5s, transform 0.5s;
+        color: blue;
     }
 
+    button img {
+        width: 40px;  /* Set the desired width */
+        height: 40px; /* Set the desired height */
+        vertical-align: middle; /* Align the image vertically with the text */
+        gap: 5px;
+      }
 
+      button:hover {
+        border: 1px;
+        border-color: black;
+    border-color: green;
+    color:rgb(80, 250, 1);
+    text-decoration: underline;
+    transition: 0.5s;
+    transform: scale(1.00);
+    
+      }    
+      
 .slides{
+    display: flex;
     width: 1fr;
     height: 600px;
-    background-color: black;
     background-image: url(https://lh3.googleusercontent.com/p/AF1QipNF3_bLPeNDK1bT_gJU79mKF5nAYka8tLkkzKAw=s680-w680-h510);
     background-size: auto; /* Ensures the image covers the entire div */
     background-position: auto; /* Centers the image */
@@ -67,3 +95,22 @@
 
 }
 
+    
+
+.about{
+    margin-left: auto;
+    color: rgb(250, 248, 248);
+    width: 54%;
+    background-image: url(https://img.freepik.com/free-photo/book-library-with-open-textbook_1150-5916.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: auto; /* Centers the image */
+    background-repeat: no-repeat;
+    
+}
+.h1{
+    text-align: center;
+   text-decoration: underline;
+}
+.p1{
+    font-size: 22px;
+}
