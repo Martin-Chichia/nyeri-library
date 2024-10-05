@@ -17,11 +17,11 @@
     
     <div class="tab-container">
         <div class="grid-container">
-            <button onclick="openTab('tab1')">HOME</button>
-            <button onclick="openTab('tab2')">ABOUT US</button>
-            <button onclick="openTab('tab3')">LOGIN</button>
-            <button onclick="openTab('tab7')">CONTACT US</button>
-      
+            
+            <button onclick="openTab('tab1')"><img src="https://static.vecteezy.com/system/resources/previews/018/873/934/original/blue-check-mark-verified-profile-account-social-media-symbol-user-interface-theme-3d-icon-render-illustration-isolated-png.png" alt="">  Log In</button>
+            <button onclick="openTab('tab2')"><img src="https://img.icons8.com/dotty/200w/228BE6/add-user-male.png" alt=""> Sign Up </button>
+            <button onclick="openTab('tab3')"><img src="https://static.vecteezy.com/system/resources/thumbnails/025/225/156/small_2x/3d-illustration-icon-of-phone-call-with-circular-or-round-podium-png.png" alt="">Contact Us</button>
+            <button onclick="openTab('tab4')"><img src="https://cdn-icons-png.flaticon.com/512/5474/5474438.png" alt=""> Our Services </button>
         </div>
     </div>
      
@@ -30,6 +30,49 @@
  
   
    <div class="slides">
+    <div class="about">
+        <p>
+            <h1 class="h1">Welcome To The Nyeri Naitonal Library</h1>
+            <p class="p1">
+                The Kenya National Library Service (KNLS) is a Government State Corporation, established by the KNLS Board Act Cap
+                 225 of the Laws of Kenya in 1965 - revised [Act No. 12 of 1984]. KNLS’ headquarters is at Maktaba Kuu Building located
+                  in Upper Hill Nairobi and has two other facilities at Buruburu in the Eastland Areas of Nairobi, and Nakuru in Nakuru County. 
+                KNLS also manages the virtual library to allow the public wide access to information resources and sources.</p>
+        </p>
+    </div>
    </div>
+
+
+<div id="tab1 class="login-container">
+    <h2>Login</h2>
+    <form action="/submit" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+<script>
+    function openTab(tabName) {
+        var i, tabContent;
+        tabContent = document.getElementsByClassName("description");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+    window.onload = function() {
+var selectedTab = localStorage.getItem('selectedTab');
+if (selectedTab) {
+openTab(selectedTab);
+} else {
+// If no tab is selected, default to opening the first tab
+openTab('tab1');
+}
+};
+</script>
 </body>
 </html>
